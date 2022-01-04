@@ -31,9 +31,9 @@ public class EmployeeController {
     }
 
     @GetMapping("/api/v1/employee/{id}")
-    public EmployeeEntity getEmployee(@PathVariable(name = "EmployeeId") int EmployeeId){
+    public EmployeeEntity getEmployee(@PathVariable( "id") int id){
 
-        return this.employeeService.getEmployeeById( EmployeeId);
+        return this.employeeService.getEmployeeById(id);
     }
 
 
